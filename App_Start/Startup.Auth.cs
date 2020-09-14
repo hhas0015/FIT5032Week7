@@ -57,11 +57,12 @@ namespace FIT5032Week7
             //app.UseFacebookAuthentication(
             //   appId: "",
             //   appSecret: "");
-
+            
             app.UseGoogleAuthentication(new GoogleOAuth2AuthenticationOptions()
             {
-                ClientId = "791297278296-6c1e4q3hu840jdl503qi4ge7cnhdgm45.apps.googleusercontent.com",
-                ClientSecret = "Vfr7eDnCWcBQpS4quQj81Ar4"
+                // I have removed my clientId and ClientSecret.
+                ClientId = "xxxxxxxx",
+                ClientSecret = "xxxxxx"
             });
         }
     }
